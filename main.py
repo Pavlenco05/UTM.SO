@@ -5,7 +5,7 @@ from PySide6.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxL
 class GameTimer:
     def __init__(self, callback, duration_minutes=20):
         self.callback = callback
-        self.duration = duration_minutes * 60  # Convert to seconds
+        self.duration = duration_minutes * 60  
         self.current_time = self.duration
         self.is_running = False
         self.is_timeout = False
